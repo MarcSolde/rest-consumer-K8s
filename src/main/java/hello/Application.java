@@ -19,7 +19,7 @@ public class Application implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         RestTemplate restTemplate = new RestTemplate();
-        Value value = restTemplate.getForObject("http://my-rest:8080/greeting", Value.class);
+        Value value = restTemplate.getForObject("http://rest1:8080/greeting", Value.class);
         log.info(value.toString());
     }
 }
